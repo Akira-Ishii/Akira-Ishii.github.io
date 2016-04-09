@@ -4,15 +4,161 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>石井のページ</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+        background-color: #ddd;
+        font-size: 16px;
+      }
+      
+      header {
+        background-image: url("akira_bg.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+      }
+      
+      #logo {
+        padding: 50px 0;
+        text-align: center;
+      }
+      
+      #logo img {
+        max-width: 170px;
+        border: 5px solid #fff;
+        border-radius: 100%;
+      }
+      
+      #logo h1 {
+        letter-spacing: 0.15em;
+        color: #fff;
+        text-shadow: 
+          -1px -1px #333,
+          1px -1px #333,
+          -1px 1px #333,
+          1px -1px #333;
+        }
+      
+      .container {
+        max-width: 800px;
+        margin: -80px auto 0;
+        background-color: #fff;
+        }
+        
+      #section {
+        padding: 30px 20px;
+        }
+        
+      #site-menu {
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      #section h2 {
+        padding: 10px 0 20px 0;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.07em;
+        }
+      
+      
+      dl {
+        width: 800px;
+      }
+      
+      dt {
+        float: left;
+        clear: left;
+        width: 50px;
+      }
+      
+      dd {
+        float: left;
+        width: 650px;
+      }
+    
+      footer {
+        padding: 20px 0;
+        font-size: 70%;
+        text-align: center;
+        background-color: #ccc;
+        color: #666;
+      }
+    </style>
+    
   </head>
   <body>
-    <h1>Hello, UNITED!</h1>
+    <header>
+      <div id="logo">
+        <img src="akira_profile.jpg" alt="" />
+        <h1>石井 陽</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div id="section">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="site-menu">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="#">About</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href=".html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2>About</h2>
+        <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  自己紹介</h3>
+          <dl>
+          <dt>名前</dt>
+          <dd>石井 陽</dd>
+          <dt>出身</dt>
+          <dd>福岡県</dd>
+          <dt>趣味</dt>
+          <dd>
+            <ul class="list-inline">
+              <li>お酒</li>
+              <li>喫茶店巡り</li>
+              <li>音楽鑑賞</li>
+            </ul>          
+          </dd>
+  
+          </dl>
+          <br />
+          <a class="btn btn-info btn-lg" href="https://github.com/Akira-Ishii" target="_blank">
+            <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+            GitHubページへ
+          </a>
+
+      </div> 
+        
+        
+
+      <footer>
+        <p>&copy; 2016 Akira Ishii.</p>
+      </footer>  
+    </div>
   </body>
 </html>
